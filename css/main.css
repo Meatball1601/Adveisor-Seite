@@ -4,7 +4,7 @@ html, body {
   }
   @font-face {
     font-family: coolFont;
-    src: url(../../Font.ttf);
+    src: url(../fonts/Font.ttf);
   }
   
   .container {
@@ -55,7 +55,7 @@ html, body {
     grid-template-columns: 6FR 4FR 6FR ;
     grid-template-rows: 1FR 1FR;
     display: grid;
-    background-image:url("../../background.jpg") ;
+    background-image:url("../images/background.jpg") ;
     background-size: cover;
     height: 95%;
   }
