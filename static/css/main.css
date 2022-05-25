@@ -1,0 +1,88 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  @font-face {
+    font-family: coolFont;
+    src: url(../../Font.ttf);
+  }
+  
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+  }
+  .greetingTxt{
+    margin-top: 40%;
+    color: #ffffff;
+    overflow:hidden;
+    text-align: center;
+  }
+  
+  .container form {
+    margin-bottom: 10px;
+  }
+  
+  .container h1 {
+    font-family: Arial, sans-serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-family: coolFont;
+  }
+  
+  .container button {
+    width:70px;
+    height: 30px;
+    background-color: steelblue;
+    margin: 3px;
+  }
+  
+  .container input {
+    width: 200px;
+    height: 15px;
+    font-size: 1rem;
+    margin: 2px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .output {
+    display: inline-block;
+  }
+  
+  #main{
+    grid-template-columns: 6FR 4FR 6FR ;
+    grid-template-rows: 1FR 1FR;
+    display: grid;
+    background-image:url("../../background.jpg") ;
+    background-size: cover;
+    height: 95%;
+  }
+  .ship{
+    height: 50vh;
+    float: right;
+    margin-top: auto;
+  }
+  .dataInf{
+    width: 80%;
+  }
+  .infPointer{
+    color: #ffffff;
+    margin: auto;
+    width:60%;
+    margin-top: 40vh;
+    -webkit-animation: hover 5s infinite; /* Safari 4.0 - 8.0 */
+     animation: hover 5s infinite;
+}
+   @-webkit-keyframes hover {
+     from {padding-top: 0%;}
+     50%{padding-top: 2%}
+     to {padding-top: 0%;}
+   }
+   
+   @keyframes hover {
+     from {padding-top: 0%;}
+     50%{padding-top: 2%}
+     to {padding-top: 0%;}
+   }
