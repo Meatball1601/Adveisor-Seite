@@ -79,7 +79,7 @@ html, body {
     height: 95%;
   }
   .ship{
-    height: 90%;
+    height: 50vh;
     float: right;
     margin-top: auto;
   }
