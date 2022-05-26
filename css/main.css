@@ -32,10 +32,21 @@ html, body {
   }
   
   .container button {
-    width:70px;
-    height: 30px;
-    background-color: steelblue;
-    margin: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 3px;
+    border-style: none;
+    background: linear-gradient(42deg,#2a255083,#E04D01,#FF7700);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease 0s;
+  }
+  .container button:hover {
+    background: linear-gradient(42deg,#2a255031,#e04b0181,#ff770087);
+    box-shadow: 0px 5px 15px #e04b0187;
+    transform: translateY(-4px);
   }
   
   .container input {
@@ -65,15 +76,18 @@ html, body {
     margin-top: auto;
   }
   .dataInf{
-    width: 80%;
+    margin-left: 7.5%;
+    width: 85%;
   }
   .infPointer{
     color: #ffffff;
     margin: auto;
-    width:60%;
+    width:90%;
     margin-top: 40vh;
+    text-align: center;
     -webkit-animation: hover 5s infinite; /* Safari 4.0 - 8.0 */
      animation: hover 5s infinite;
+     font-family: Arial, Helvetica, sans-serif;
 }
    @-webkit-keyframes hover {
      from {padding-top: 0%;}
@@ -86,3 +100,165 @@ html, body {
      50%{padding-top: 2%}
      to {padding-top: 0%;}
    }
+
+   input[type="file"]{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 0.1px;
+    height: 0.1px;
+    user-select: none;
+}
+
+input[type="file"]:focus + label[for="files"]{
+    border: 1px solid #85E5FF;
+}
+
+label[for="files"]{
+    background: transparent;
+    padding: 8px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.101);
+}
+
+label[for="files"]:hover{
+    background: linear-gradient(42deg,#2a255031,#e04b0181,#ff770087);
+    box-shadow: 0px 5px 15px #e04b0187;
+}
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table * {
+  position: relative;
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 60px;
+  background: #e04b01e0;
+  color: white;
+  font-size: 16px;
+}
+table tbody tr {
+  height: 48px;
+  border: 1px solid #000000;
+}
+table tbody tr:last-child {
+  border: 0;
+}
+table tbody td {
+  border: 1px solid #e04b01e0;
+}
+table td, table th {text-align: center
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+@media screen and (max-width: 35.5em) {
+  table {
+    display: block;
+ }
+  table > *, table tr, table td, table th {
+    display: block;
+ }
+  table thead {
+    display: none;
+ }
+  table tbody tr {
+    height: auto;
+    padding: 8px 0;
+ }
+  table tbody tr td {
+    padding-left: 45%;
+    margin-bottom: 12px;
+ }
+  table tbody tr td:last-child {
+    margin-bottom: 0;
+ }
+  table tbody tr td:before {
+    position: absolute;
+    font-weight: 700;
+    width: 40%;
+    left: 10px;
+    top: 0;
+ }
+  table tbody tr td:nth-child(1):before {
+    content: "Code";
+ }
+  table tbody tr td:nth-child(2):before {
+    content: "Stock";
+ }
+  table tbody tr td:nth-child(3):before {
+    content: "Cap";
+ }
+  table tbody tr td:nth-child(4):before {
+    content: "Inch";
+ }
+  table tbody tr td:nth-child(5):before {
+    content: "Box Type";
+ }
+}
+.dataInf h2{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  background: linear-gradient(42deg,#2a2550c3,#E04D01,#ff9a41);
+  background-size: 600% 600%;
+  
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  -o-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 51%}
+  100%{background-position:0% 50%}
+}
+
+/* 251D3A 2A2550 E04D01 FF7700 */

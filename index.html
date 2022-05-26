@@ -11,41 +11,88 @@
         <div class="greetingTxt">
         <h1>Trivial Ships</h1>
           <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
-            <input type ="file" accept=".csv" name="file" />
+            <input type="file" accept=".csv" name="file" multiple name="Datein[]" id="files"> 
+            <label for="files">CSV-Datei auswählen</label> 
             <button type="Submit"> Hochladen </button>
           </form>
-        <div class="output">
-          {{text | safe}}
-        </div>
         </div>
       </div>
       <div></div>
       <div></div>
       <div><div class="infPointer"> 
-        <i class="fa fa-long-arrow-right arrow2" aria-hidden="true"></i> Wie soll die Datei aussheen? </div></div>
+        <i class="fa fa-long-arrow-right arrow2" aria-hidden="true"></i> &#8595Wie soll die Datei aussheen?&#8595 </div></div>
       <div>
         <img class="ship" src="images/ship.png">
       </div>
     </div>
 
     <div class="dataInf">
-      <h2>Bitte CSV Datei (in Excel erstellen) mit folgenden Spalten hochladen: heheheheeheh</h2>
-      <ul>
-        <li>Kategorie</li>
-        <li>Frage</li>
-        <li>Antwort 1</li>
-        <li>Antwort 2</li>
-        <li>Antwort 3</li>
-        <li>Antwort 4</li>
-        <li>Richtig</li>
-      </ul> 
+      <h2>Bitte CSV Datei (in Excel erstellen) mit folgenden Spalten hochladen:</h2>
+      <table>
+        <thead>
+          <tr class="tableRow1">
+            <td>Kategorie</td>
+            <td>Frage</td>
+            <td>Antwort 1</td>
+            <td>Antwort 2</td>
+            <td>Antwort 3</td>
+            <td>Antwort 4</td>
+            <td>Richtig</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tableRow">
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Beispiel</h2>
+      <table>
+        <thead>
+          <tr class="tableRow1">
+            <td>Kategorie</td>
+            <td>Frage</td>
+            <td>Antwort 1</td>
+            <td>Antwort 2</td>
+            <td>Antwort 3</td>
+            <td>Antwort 4</td>
+            <td>Richtig</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tableRow">
+            <td>Studium</td>
+            <td>Wer ist der beste Professor?
+            </td>
+            <td>Michael Joham</td>
+            <td>Claudia Scheimbauer</td>
+            <td>Christian Bach</td>
+            <td>Boris Vexler</td>
+            <td>1</td>
+          </tr>
+          <tr class="tableRow">
+            <td>Allgemeinwissen</td>
+            <td>Hauptstadt von Bayern</td>
+            <td>Berlin</td>
+            <td>Starnberg</td>
+            <td>München</td>
+            <td>Porto</td>
+            <td>3</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <br>
   </body>
 </html>
 
 
-
-
-
-
+<script type="text/javascript" src="script/jquery.js"></script>
+<script type="text/javascript" src="script/main.js"></script>
 
