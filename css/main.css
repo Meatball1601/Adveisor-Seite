@@ -4,7 +4,15 @@ html, body {
   }
   @font-face {
     font-family: coolFont;
-    src: url(../fonts/Font.ttf);
+    src: url(../fonts/MainFont.ttf);
+  }
+  @font-face {
+    font-family: logoFont;
+    src: url(../fonts/LogoFont.ttf);
+  }
+  @font-face {
+    font-family: navFont;
+    src: url(../fonts/NavFont.ttf);
   }
   
   .container {
@@ -166,7 +174,9 @@ table tbody tr:last-child {
   border: 0;
 }
 table tbody td {
-  border: 1px solid #e04b01e0;
+  border: 4px solid #e04b01e0;
+  border-bottom: 2px solid #e04b01e0;
+  border-top: 2px solid #e04b01e0;
 }
 table td, table th {text-align: center
 }
@@ -260,5 +270,100 @@ table td.r, table th.r {
   50%{background-position:100% 51%}
   100%{background-position:0% 50%}
 }
+.navBar{
+  position: absolute;
+  width: 100%;
+}
+.navBlock{
+  float: right;
+  background: transparent;
+  margin-right: 20px;
+  margin-top: 5px;
+  padding: 8px;
+  color: white;
+  font-family: navFont;
+  border-radius: 3px;
+  border-width: 2px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s ease 0s;
+  text-shadow: 0px 2px 1px #e04b01;
+  font-size: 1em;
+  font-weight: 100;
+}
+.navBlock{
+  float: right;
+  background: transparent;
+  margin-right: 20px;
+  margin-top: 10px;
+  padding: 8px;
+  color: white;
+  font-family: navFont;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: all 0.3s ease 0s;
+  text-shadow: 0px 2px 1px #e04b01;
+  font-weight: 100;
+}
+.navBlock:hover{
+  -webkit-animation: drift2 1.5s infinite; /* Safari 4.0 - 8.0 */
+   animation: drift2 1.5s infinite ;
+}
+.navLogo{
+  float: left;
+  background: transparent;
+  margin-left: 25px;
+  margin-top: 5px;
+  padding: 8px;
+  color: white;
+  font-family: logoFont;
+  cursor: pointer;
+  font-size: 1.5em;
+  transition: all 0.3s ease 0s;
+  text-shadow: 0px 2px 1px #e04b01;
+  font-weight: 500;
+  -webkit-animation: drift 5s infinite; /* Safari 4.0 - 8.0 */
+   animation: drift 5s infinite ;
+}
+@keyframes drift{
+  from {color: white;
+   text-shadow: 0px 2px 1px #e04b01;}
+  33%{color: #E04D01;
+   text-shadow: 1px 2px 1px #2A2550;}
+  66% {color: #2A2550;
+   text-shadow: -1px 2px 1px white;}
+  to{color:white;
+   text-shadow: 0px 2px 1px #e04b01;}
+}
+ @-webkit-keyframes drift {
+   from {color: white;
+    text-shadow: 0px 2px 1px #e04b01;}
+   33%{color: #E04D01;
+    text-shadow: 1px 2px 1px #2A2550;}
+   66% {color: #2A2550;
+    text-shadow: -1px 2px 1px white;}
+   to{color:white;
+    text-shadow: 0px 2px 1px #e04b01;}
+ }
+ @keyframes drift2 {
+   from {color: white;
+    text-shadow: 0px 2px 1px #e04b01;}
+   66%{color: #E04D01;
+    text-shadow: 1px 2px 1px #2A2550;}
+   33% {color: #2A2550;
+    text-shadow: -1px 2px 1px white;}
+   to{color:white;
+    text-shadow: 0px 2px 1px #e04b01;}
+ }
+ @-webkit-keyframes drift2 {
+   from {color: white;
+    text-shadow: 0px 2px 1px #e04b01;}
+   66%{color: #E04D01;
+    text-shadow: 1px 2px 1px #2A2550;}
+   33% {color: #2A2550;
+    text-shadow: -1px 2px 1px white;}
+   to{color:white;
+    text-shadow: 0px 2px 1px #e04b01;}
+ }
 
 /* 251D3A 2A2550 E04D01 FF7700 */
