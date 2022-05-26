@@ -278,34 +278,17 @@ table td.r, table th.r {
   float: right;
   background: transparent;
   margin-right: 20px;
-  margin-top: 5px;
-  padding: 8px;
-  color: white;
-  font-family: navFont;
-  border-radius: 3px;
-  border-width: 2px;
-  cursor: pointer;
-  font-size: 20px;
-  transition: all 0.3s ease 0s;
-  text-shadow: 0px 2px 1px #e04b01;
-  font-size: 1em;
-  font-weight: 100;
-}
-.navBlock{
-  float: right;
-  background: transparent;
-  margin-right: 20px;
   margin-top: 10px;
   padding: 8px;
   color: white;
   font-family: navFont;
   cursor: pointer;
   font-size: 1.5em;
-  transition: all 0.3s ease 0s;
   text-shadow: 0px 2px 1px #e04b01;
   font-weight: 100;
 }
 .navBlock:hover{
+  transition: all 0.3s ease 0s;
   -webkit-animation: drift2 1.5s infinite; /* Safari 4.0 - 8.0 */
    animation: drift2 1.5s infinite ;
 }
