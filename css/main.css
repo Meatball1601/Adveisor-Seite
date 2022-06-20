@@ -422,7 +422,9 @@ table td.r, table th.r {
     }
     .intro{width: 30%;
     margin-left: 10%;
-    margin-top: 15%;}
+    margin-top: 15%;
+    float: left;
+  }
 
     .team h1{
     font-family: coolFont;
@@ -446,8 +448,21 @@ table td.r, table th.r {
       margin-left: 5%;
       float: left;
       text-align: center;
+      background: linear-gradient(180deg, #2a2550b2, #2a2550b2, #2a2550b2 ,#e04b01d7 ,#ff9a41 );
+      height: 24vw;
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+      color: white;
+      margin-bottom: 20px;
     }
     .profileBlock img{
       width: 100%;
+    }
+    .game img{
+      width:40%;
+      float: right;
+      margin-right: 5%;
+      margin-top: 10%;
     }
 /* 251D3A 2A2550 E04D01 FF7700 */
